@@ -54,8 +54,6 @@ function drawLine(x1, y1, x2, y2) {
 }
 
 function listenToMouse(canvas) {
-
-
   var using = false
   var lastPoint = {
     x: undefined,
