@@ -1,22 +1,42 @@
-<!doctype html>
-<html lang="zh-Hans">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>我的画板 demo</title>
-	<link rel="stylesheet" href="./style.css">
+	<!doctype html>
+	<html lang="zh-Hans">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>我的画板 demo</title>
+		<link rel="stylesheet" href="./style.css">
+		<script src="//at.alicdn.com/t/font_491817_2hk6dwydgk138fr.js"></script>
+	</head>
+	<body>
+	<canvas id="xxx" width=300 height=300></canvas>
+		<div id=actions class="actions">
+			<svg class="icon" id="eraser">
+					<use xlink:href="#icon-erase"></use>
+			</svg>
+			<svg class="icon active" id="pen">
+					<use xlink:href="#icon-pen"></use>
+			</svg>
+			<svg class="icon" id="clear">
+					<use xlink:href="#icon-delete"></use>
+			</svg>
+			<svg class="icon" id="download">
+					<use xlink:href="#icon-download"></use>
+			</svg>
+		</div>
+		<ol class="colors">
+			<li id="black" class="black active"></li>
+			<li id="red" class="red"></li>
+			<li id="green" class="green"></li>
+			<li id="blue" class="blue"></li>
+		</ol>
+		<ol class="sizes">
+			<li id="thin" class="thin"></li>
+			<li id="thick" class="thick"></li>
+		</ol>
+		<script src="./main.js"></script>
 
-</head>
-<body>
-<canvas id="xxx" width=300 height=300></canvas>
-  <div id=actions class="actions">
-    <button id="eraser">橡皮擦</button>
-    <button id="brush">画笔</button>
-  </div>
-  <script src="./main.js"></script>
-
-</body>
-</html>
+	</body>
+	</html>
 
 
 
